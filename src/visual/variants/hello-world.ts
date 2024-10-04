@@ -1,8 +1,12 @@
 import { IVisual } from '../manager';
 
 export class HelloWorld implements IVisual {
-  fullText = 'hello world';
+  fullText: string;
   currentIndex = 0;
+
+  constructor(fullText?: string) {
+    this.fullText = fullText ?? 'hello world';
+  }
 
   draw(): string {
     return this.modifyText(this.fullText);
