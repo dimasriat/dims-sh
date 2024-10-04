@@ -1,0 +1,22 @@
+import { getFoo } from './num';
+
+console.log('Hello, World!');
+
+const dims = document.getElementById('dims');
+
+dims.innerText = 'fck webpack';
+// const temp: string = `zzzz ${24 * 3}`;
+//
+// dims.innerText = `
+//  _   _      _ _        __        __         _     _ _
+// | | | | ___| | | ___   \ \      / /__  _ __| | __| | |
+// | |_| |/ _ \ | |/ _ \   \ \ /\ / / _ \| '__| |/ _` | |
+// |  _  |  __/ | | (_) |   \ V  V / (_) | |  | | (_| |_|
+// |_| |_|\___|_|_|\___/     \_/\_/ \___/|_|  |_|\__,_(_)
+//
+// abcdefg
+// `;
+
+document.getElementById('dims-button').addEventListener('click', () => {
+  dims.innerText = getFoo();
+});

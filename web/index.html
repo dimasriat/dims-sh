@@ -1,40 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dims.sh</title>
-    <link rel="stylesheet" href="css/dims.css">
+    <link rel="stylesheet" href="css/dims.css" />
   </head>
   <body>
     <div class="wrapper">
       <h1>dims.sh</h1>
       <p>a software engineer. interested in blockchain, economics and maths.</p>
       <p>
-        contact me on 
+        contact me on
         <a href="https://x.com/0xDimss" target="_blank">twitter</a>,
         <a href="https://github.com/dimasriat" target="_blank">github</a> or via
         <a href="mailto:gm@dims.sh">email</a>
       </p>
-      <div id="dims" style="border: 1px solid black; margin-top: 4px">
-        <pre>
- _   _      _ _        __        __         _     _ _ 
-| | | | ___| | | ___   \ \      / /__  _ __| | __| | |
-| |_| |/ _ \ | |/ _ \   \ \ /\ / / _ \| '__| |/ _` | |
-|  _  |  __/ | | (_) |   \ V  V / (_) | |  | | (_| |_|
-|_| |_|\___|_|_|\___/     \_/\_/ \___/|_|  |_|\__,_(_)
-
-abcdefg
-        </pre>
+      <div style="border: 1px solid black; margin-top: 4px">
+        <pre id="dims"></pre>
       </div>
-      <div id="dims-2" style="border: 1px solid black; margin-top: 16px">
-        zzz
-      </div>
-      <button id="dims-button" style="margin-top: 16px" onclick="clickMe()">
-          Toggle
-      </button>
+      <button id="dims-button" style="margin-top: 16px">Toggle</button>
     </div>
-    <script src="js/dims.js"></script>
+    <script src="js/dims-webpack.js"></script>
   </body>
 </html>
-
