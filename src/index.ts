@@ -1,3 +1,5 @@
+import { getFoo } from "./num";
+
 console.log("Hello, World!");
 
 const dims = document.getElementById("dims");
@@ -16,5 +18,5 @@ dims.innerText = "fck webpack";
 // `;
 
 document.getElementById("dims-button").addEventListener("click", () => {
-  dims.innerText = "!!!!!!!";
+  dims.innerText = getFoo();
 });
