@@ -1,11 +1,11 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
-  mode: "development", // or 'production'
-  entry: "./src/index.ts",
+  mode: 'development', // or 'production'
+  entry: './src/index.ts',
   output: {
-    path: path.resolve(__dirname, "./dist/js"),
-    filename: "dims-webpack.js", // <--- Will be compiled to this single file
+    path: path.resolve(__dirname, './dist/js'),
+    filename: 'dims-webpack.js', // <--- Will be compiled to this single file
   },
   module: {
     rules: [
@@ -13,10 +13,10 @@ module.exports = {
         test: /\.ts$/,
         use: [
           {
-            loader: "ts-loader",
+            loader: 'ts-loader',
           },
           {
-            loader: "babel-loader",
+            loader: 'babel-loader',
           },
         ],
         exclude: /node_modules/,
@@ -24,6 +24,6 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".ts", ".js"],
+    extensions: ['.ts', '.js'],
   },
 };

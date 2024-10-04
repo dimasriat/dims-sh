@@ -1,10 +1,10 @@
-import { getFoo } from "./num";
+import { getFoo } from './num';
 
-console.log("Hello, World!");
+console.log('Hello, World!');
 
-const dims = document.getElementById("dims");
+const dims = document.getElementById('dims');
 
-dims.innerText = "fck webpack";
+dims.innerText = 'fck webpack';
 // const temp: string = `zzzz ${24 * 3}`;
 //
 // dims.innerText = `
@@ -17,6 +17,6 @@ dims.innerText = "fck webpack";
 // abcdefg
 // `;
 
-document.getElementById("dims-button").addEventListener("click", () => {
+document.getElementById('dims-button').addEventListener('click', () => {
   dims.innerText = getFoo();
 });
