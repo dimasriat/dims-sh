@@ -4,7 +4,7 @@ module.exports = {
   mode: "development", // or 'production'
   entry: "./src/index.ts",
   output: {
-    path: path.resolve(__dirname, "./web/js"),
+    path: path.resolve(__dirname, "./dist/js"),
     filename: "dims-webpack.js", // <--- Will be compiled to this single file
   },
   module: {

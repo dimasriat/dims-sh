@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "pnpm copy-to-dist && webpack",
+    "copy-to-dist": "cp -R web dist/",
     "format": "prettier --write ."
   },
   "keywords": [],
