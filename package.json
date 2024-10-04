@@ -5,7 +5,7 @@
   "main": "src/index",
   "scripts": {
     "build": "pnpm copy-to-dist && webpack",
-    "copy-to-dist": "cp -R web dist/",
+    "copy-to-dist": "cp -R web/* dist/",
     "format": "prettier --write ."
   },
   "keywords": [],

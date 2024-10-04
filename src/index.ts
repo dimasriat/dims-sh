@@ -1,19 +1,12 @@
 import { getFoo } from './num';
-import figlet from 'figlet';
-
-import standard from 'figlet/importable-fonts/Standard.js';
-
-console.log('Hello, World!');
+import { HelloWorld, VisualManager } from './visual';
 
 const dims = document.getElementById('dims');
 
-dims.innerText = 'fck webpack';
+const vm = new VisualManager([new HelloWorld()]);
 
-figlet.parseFont('Standard', standard);
-dims.innerText = figlet.textSync('dims . sh');
+dims.innerText = vm.getCurrentVisual().draw();
 
 document.getElementById('dims-button').addEventListener('click', async () => {
-  dims.innerText = 'loading...';
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-  dims.innerText = getFoo();
+  dims.innerText = vm.getCurrentVisual().update().draw();
 });
